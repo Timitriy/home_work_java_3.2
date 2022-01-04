@@ -3,7 +3,7 @@ public class Main {
         BmiService service = new BmiService();
         double growth = 1.70;
         double weight = 60;
-        double massIndex = weight / (growth * growth);
+        double massIndex = service.calculate(60,1.70);
         System.out.println(massIndex);
     }
 }
